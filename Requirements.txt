@@ -1,0 +1,67 @@
+Back-end requirements:
+
+    Create multi-layer architecture for the project
+        Project.DAL
+        Project.Common
+        Project.Model.Common
+        Project.Model
+        Project.Repository.Common
+        Project.Repository
+        Project.Repository.Tests
+        Project.Service.Common
+        Project.Service
+        Project.Service.Tests
+        Project.WebAPI
+        Project.WebAPI.Tests
+
+    Create a database with the following elements
+        VehicleMake (Id,Name,Abrv) e.g. BMW,Ford,Volkswagen,
+        VehicleModel (Id,MakeId,Name,Abrv) e.g. 128,325,X5 (BWM),
+    Unit Tests
+        create Unit Tests for vehicle model service
+        Please use xUnit, Moq, and FluentAssertions
+
+Front-end requirements:
+
+    Front-end framework (ReactJS preferred) 
+        State management – Mobx
+        Create mockups stored in the Mobx with the following elements
+             VehicleMake (Id,Name,Abrv) e.g. BMW,Ford,Volkswagen) - CRUD with Sorting, Filtering & Paging)
+            VehicleModel (Id,MakeId,Name,Abrv) e.g. 128,325,X5 (BWM) - CRUD with Sorting, Filtering & Paging
+                Filtering by Make
+        Create a list/grid and edit screens, where the list screen should have paging, sorting, and filtering functionality 
+        Use for creating react project https://reactjs.org/docs/create-a-new-react-app.html
+    Create React application (front-end) that will connect to back-end
+        This should be a separate project or solution
+
+Implementation details: 
+
+    async/await should be enforced in all layers (async all the way)
+    all classes should be abstracted (have interfaces so that they can be unit tested)
+    IoC (Inversion of Control) and DI (Dependency Injection) should be enforced in all layers (constructor injection preferable) 
+        Ninject DI container or Autofac should be used (https://github.com/ninject/ninject/wiki)
+        (https://autofac.readthedocs.io/en/latest/getting-started/index.html)
+    Mapping should be done by using AutoMapper (http://automapper.org/)
+    Create DAL project using EF 6 or above with the Code First approach (EF Power Tools can be used)   
+    Project.Common should be cross-cutting project containing utility classes
+    *.Common projects should contain contracts (interfaces) for layers
+    Repository project should implement the following
+        Generic repository - http://www.codeproject.com/Articles/838097/CRUD-Operations-Using-the-Generic-Repository-Pat 
+        Unit Of Work -  https://gist.github.com/khorvat/2b1bf27f0047f62fdb60 & https://gist.github.com/khorvat/dabbb408f7419235efd8 http://www.codeproject.com/Articles/581487/Unit-of-Work-Design-Pattern 
+    Service project
+        use composition pattern with repositories -inject them through the constructor - http://en.wikipedia.org/wiki/Composition_over_inheritance 
+        service methods should only use model contracts (interfaces) as input and output parameters
+    WebAPI project
+        this is DI composition root so you should install Ninject/Autofac here
+        use controllers with async methods
+        return proper Http status codes
+    React 
+        enforce the following folder structure (https://reactjs.org/docs/faq-structure.html)
+            Common
+                Common utilities, services, and stores used in the whole project
+            Components
+                Common components used in the whole project
+            Layouts
+            Pages
+            Stores
+        enforce the following naming conventions - https://github.com/airbnb/javascript/tree/master/react 

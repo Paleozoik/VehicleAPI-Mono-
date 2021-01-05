@@ -1,0 +1,7 @@
+EF core nije htjeo stvoriti migraciju dok nisam dodao
+
+<GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+
+u DAL.csproj i instalirao EFCore.Design u VehicleAPI
+
+Donno why that happened, but it works now so I'm not complaining. Flagging it just in case

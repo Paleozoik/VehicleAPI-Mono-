@@ -1,0 +1,9 @@
+C:\ProjectFiles\VehicleAPI-Mono-\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\ProjectFiles\VehicleAPI-Mono-\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\ProjectFiles\VehicleAPI-Mono-\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\ProjectFiles\VehicleAPI-Mono-\Model\obj\Debug\netcoreapp3.1\Model.pdb

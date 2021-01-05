@@ -1,0 +1,12 @@
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.json
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\bin\Debug\netcoreapp3.1\DAL.runtimeconfig.dev.json
+C:\ProjectFiles\VehicleAPI-Mono-\DAL\obj\Debug\netcoreapp3.1\DAL.genruntimeconfig.cache
