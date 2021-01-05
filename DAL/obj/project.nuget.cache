@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "N2k2gEr12Uu8WtSh9gzzbOroethBrgQ5lKFXR9p4DRZVpvaghMoG6/z44js7X2FLN3Bk26E0jBZ7NWmDMudKUQ==",
+  "dgSpecHash": "Gg7phiXQskvUunNtLxHPRNBMVpKjzq673iaAQNS2rBI5fGTVs16vuPGKHSQIMbY5sWDGnY9vfaXHM49xG2MpCw==",
   "success": true,
   "projectFilePath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
@@ -100,8 +100,7 @@
     "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

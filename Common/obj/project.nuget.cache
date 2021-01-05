@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ypOi8x9XtX/6i7dKbh8Hjv+o/KOZw3/zE21RIlAsf3hV7PR6e/rfDmLdQBooadxp7ok8wsIsSB2q4YnRcKTtAQ==",
+  "dgSpecHash": "Z56Gpk5iMgkDb77wskNjYnkZtvj7MeE8JSIo4ocms0zgUwFLDQ5i4149PKHIvziFcpegs+69u2Fio50N0pvN2g==",
   "success": true,
   "projectFilePath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
