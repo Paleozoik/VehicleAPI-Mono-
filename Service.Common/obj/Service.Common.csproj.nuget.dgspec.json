@@ -4,14 +4,142 @@
     "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj": {}
   },
   "projects": {
-    "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj": {
+    "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj",
-        "projectName": "Service.Common",
-        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj",
+        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\",
-        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\obj\\",
+        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Stjepan Drenski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Stjepan Drenski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Stjepan Drenski\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +182,151 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj",
+        "projectName": "Service.Common",
+        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\Service.Common.csproj",
+        "packagesPath": "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Service.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Stjepan Drenski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj": {
+                "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Common\\Common.csproj"
+              },
+              "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\Model.csproj": {
+                "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\Model\\Model.csproj"
+              },
+              "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\VehicleAPI.csproj": {
+                "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\VehicleAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\VehicleAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\VehicleAPI.csproj",
+        "projectName": "VehicleAPI",
+        "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\VehicleAPI.csproj",
+        "packagesPath": "C:\\Users\\Stjepan Drenski\\.nuget\\packages\\",
+        "outputPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\VehicleAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Stjepan Drenski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\ProjectFiles\\VehicleAPI-Mono-\\DAL\\DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

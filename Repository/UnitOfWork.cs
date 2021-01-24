@@ -1,18 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
 using DAL;
+using Microsoft.EntityFrameworkCore;
 using Repository.Common;
 
 namespace Repository
 {
-    public abstract class UnitOfWork : IUnitOfWork
+    public abstract class UnitOfWork<T> : IUnitOfWork<T> where T : class
     {
-        protected VehicleDbContext dbContext { get; private set; }
+        protected DbContext dbContext { get; private set; }
 
-        public UnitOfWork(VehicleDbContext dbContext)
+        public UnitOfWork(DbContext dbContext)
         {
             if (dbContext == null)
             {
@@ -25,15 +24,7 @@ namespace Repository
         {
             try
             {
-                DbEntityEntry dbEntityEntry = dbContext.Entry(entity);
-                if (dbEntityEntry.State != EntityState.Detached)
-                {
-                    dbEntityEntry.State = EntityState.Added;
-                }
-                else
-                {
-                    dbContext.Set<T>().Add(entity);
-                }
+                dbContext.Set<T>().Add(entity);
                 return Task.FromResult(1);
             }
             catch (Exception e)
@@ -47,12 +38,7 @@ namespace Repository
         {
             try
             {
-                DbEntityEntry dbEntityEntry = dbContext.Entry(entity);
-                if (dbEntityEntry.State == EntityState.Detached)
-                {
-                    dbContext.Set<T>().Attach(entity);
-                }
-                dbEntityEntry.State = EntityState.Modified;
+                dbContext.Set<T>().Update(entity);
                 return Task.FromResult(1);
             }
             catch (Exception e)
@@ -66,16 +52,7 @@ namespace Repository
         {
             try
             {
-                DbEntityEntry dbEntityEntry = dbContext.Entry(entity);
-                if (dbEntityEntry.State != EntityState.Deleted)
-                {
-                    dbEntityEntry.State = EntityState.Deleted;
-                }
-                else
-                {
-                    dbContext.Set<T>().Attach(entity);
-                    dbContext.Set<T>().Remove(entity);
-                }
+                dbContext.Set<T>().Remove(entity);
                 return Task.FromResult(1);
             }
             catch (Exception e)
@@ -90,7 +67,7 @@ namespace Repository
             var entity = dbContext.Set<T>().Find(id);
             if (entity == null)
             {
-                return 0;
+                return Task.FromResult(0);
             }
             return DeleteAsync<T>(entity);
         }

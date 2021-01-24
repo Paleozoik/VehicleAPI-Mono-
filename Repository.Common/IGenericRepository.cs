@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Common
 {
-    public interface IRepository<T> where T : class
+    public interface IGenericRepository<T> where T : class
     {
         IQueryable<T> FindAll();
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression);

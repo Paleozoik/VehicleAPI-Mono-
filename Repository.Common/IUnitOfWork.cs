@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Common
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork<T> : IDisposable where T : class
     {
         Task<int> CommitAsync();
         Task<int> AddAsync<T>(T entity) where T : class;

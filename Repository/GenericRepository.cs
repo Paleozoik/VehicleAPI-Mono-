@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public abstract class Repository<T> : IRepository<T> where T : class
+    public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly VehicleDbContext dbContext;
-        public Repository(VehicleDbContext dbContext)
+        public GenericRepository(VehicleDbContext dbContext)
         {
             if (dbContext == null)
             {
